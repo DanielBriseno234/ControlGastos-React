@@ -28,10 +28,10 @@ html {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .sombra {
@@ -61,8 +61,9 @@ header h1 {
     margin: 0 auto;
     padding: 10rem 0;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .formulario {
+        width: 90%!important;
         padding: 5rem 0;
         width: 60rem;
     }
@@ -84,7 +85,7 @@ header h1 {
 
 .formulario label {
     color: var(--azul);
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -183,7 +184,7 @@ header h1 {
 }
 .formulario input[type="text"].nuevo-presupuesto, 
 .formulario input[type="number"].nuevo-presupuesto {
-    font-size: 2.8rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -207,7 +208,7 @@ header h1 {
 }
 .contenido-presupuesto p.negativo,
 .contenido-presupuesto p.negativo span {
-    color: #DC2626;
+    color: red;
 }
 .contenido-presupuesto span {
     font-weight: 900;
@@ -240,6 +241,13 @@ main {
     align-items: center;
     gap: 2rem;
 }
+
+@media (max-width: 768px){
+    .filtros .campo{
+        flex-direction: column;
+    }
+}
+
 .filtros label {
     font-size: 3rem;
     font-weight: 900;
@@ -252,6 +260,7 @@ main {
     border-radius: 1rem;
     text-align: center;
     background-color: var(--gris-claro);
+    width: 100%;
 }
 
 .listado-gastos {
@@ -340,6 +349,8 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    align-items: center;
 }
 .modal .cerrar-modal {
     position: absolute;
