@@ -344,7 +344,6 @@ main {
 
 .modal {
     position: absolute;
-    z-index: 100;
     background-color: rgb(0 0 0 / 0.92);
     top: 0;
     left: 0;
@@ -353,6 +352,7 @@ main {
 }
 .modal .cerrar-modal {
     position: absolute;
+    z-index: 100;
     right: 3rem;
     top: 3rem;
     width: 3rem;
