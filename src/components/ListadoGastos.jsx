@@ -17,6 +17,7 @@ function ListadoGastos({
               ? "Gastos"
               : "No Hay Gastos en esta categoría"}
           </h2>
+          <p className='notas'>{gastosFiltrados.length ? 'Nota: Desliza a la derecha para editar o desliza a la izquierda para eliminar' : ''}</p>
           {gastosFiltrados.map((gasto) => (
             <Gasto
               key={gasto.id}
@@ -29,6 +30,7 @@ function ListadoGastos({
       ) : (
         <>
           <h2>{gastos.length ? "Gastos" : "No Hay Gastos aún"}</h2>
+          <p className='notas'>{gastosFiltrados.length ? 'Nota: Desliza a la derecha para editar o desliza a la izquierda para eliminar' : ''}</p>
           {gastos.map((gasto) => (
             <Gasto
               key={gasto.id}
