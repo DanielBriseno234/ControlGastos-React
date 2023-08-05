@@ -23,7 +23,7 @@ html {
 }
 
 .fijar {
-    overflow: hidden;
+    overflow: auto;
     height: 100vh;
 }
 
@@ -282,6 +282,21 @@ main {
     gap: 2rem;
     margin-bottom: 2rem;
     width: 100%;
+}
+
+@media (max-width: 768px){
+    .gasto{
+        flex-direction: column;
+    }
+    .contenido-gasto{
+        flex-direction: column;
+    }
+    .descripcion-gasto{
+        text-align: center;
+    }
+    .cantidad-gasto{
+        margin: 0;
+    }
 }
 
 .cantidad-gasto {
