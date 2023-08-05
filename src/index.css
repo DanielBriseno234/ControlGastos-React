@@ -24,7 +24,7 @@ html {
 
 .fijar {
     overflow: hidden;
-    height: 10vh;
+    height: 100vh;
 }
 
 h1 {
@@ -359,6 +359,7 @@ main {
 
 .modal {
     position: absolute;
+    height: 100vh;
     background-color: rgb(0 0 0 / 0.92);
     top: 0;
     left: 0;
