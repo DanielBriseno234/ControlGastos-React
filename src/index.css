@@ -23,8 +23,8 @@ html {
 }
 
 .fijar {
-    overflow: auto;
-    height: 100vh;
+    overflow: hidden;
+    height: 80vh;
 }
 
 h1 {
