@@ -264,6 +264,12 @@ main {
     width: 100%;
 }
 
+.notas{
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #94a3b8;
+}
+
 .listado-gastos {
     margin-top: 5rem;
 }
